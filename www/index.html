@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="theme-color" content="#00b8e5">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Lista de Usuarios | Claro Dominicana</title>
+  <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <!--BORRAR-->
+  <link rel="apple-touch-icon" href="img/mw.png">
+  <link rel="shortcut icon" type="image/png" href="img/mw.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#2271b3">
+</head>
+<body>
+  <div id="app">
+    <div class="view view-main">
+      <div data-name="home" class="page">
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner" style="background-color: #2271b3 !important;">
+            <div class="title" style="color: white">Lista de Usuarios</div>
+          </div>
+        </div>
+        <div class="page-content ptr-content ">
+          <div class="ptr-preloader">
+            <div class="preloader"></div>
+            <div class="ptr-arrow"></div>
+          </div>
+
+          <div class="popup popup-user" style="overflow: overlay;">
+            <div class="block">
+              <p style="position: absolute;top: 0;right: 20px;">
+                <img class="link popup-close" src="img/close.png" style="height: 35px;">
+              </p>
+              <p style="text-align: center;font-weight: bold;" id="IdUser"></p>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">ID Number:</div>
+                <div class="col" id="idNum"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Username:</div>
+                <div class="col"  id="Username"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Nombre:</div>
+                <div class="col"  id="Nombre"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Email:</div>
+                <div class="col"  id="email"></div>
+              </div>
+              <hr style="border-top: 1px dashed #757575;width: 85%;">
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Calle:</div>
+                <div class="col"  id="calle"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Suite:</div>
+                <div class="col"  id="suite"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Ciudad:</div>
+                <div class="col"  id="city"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Zipcode:</div>
+                <div class="col"  id="zipcode"></div>
+              </div>
+              <hr style="border-top: 1px dashed #757575;width: 85%;">
+              <!-- Info here del detalle -->
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Lat:</div>
+                <div class="col"  id="lat"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Lng:</div>
+                <div class="col"  id="lng"></div>
+              </div>
+              <hr style="border-top: 1px dashed #757575;width: 85%;">
+               <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Phone:</div>
+                <div class="col"  id="phone"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Website:</div>
+                <div class="col"  id="website"></div>
+              </div>
+              <hr style="border-top: 1px dashed #757575;width: 85%;">
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">Company:</div>
+                <div class="col"  id="company"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">CatchPhrase:</div>
+                <div class="col"  id="catchPhrase"></div>
+              </div>
+              <div class="row no-gap" style="padding-left: 30px;padding-right: 30px;">
+                <div class="col" style="font-weight: bold;float: left;">bs:</div>
+                <div class="col"  id="bs"></div>
+              </div>
+
+              <div class="row no-gap" style="padding-left: 15px;padding-right: 30px;margin-top: 15px">
+                <div class="col" style="padding-bottom: 5px;font-weight: bold;">
+                  <img src="img/claro.png" style="width: 80%;">
+                </div>
+                <div class="col" style="padding-bottom: 5px;">
+                  <p style="
+                  text-align: justify;
+                  font-size: 9px;
+                  margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan porta nunc. Praesent nec urna velit. Morbi pharetra mi feugiat odio tincidunt suscipit. Nunc at ipsum et quam ornare elementum. Cras in sagittis sapien, eget vulputate lacus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list">
+            <ul id="listUser">
+            </ul>
+          </div><!-- Close List -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="cordova.js"></script>
+  <script src="framework7/js/framework7.bundle.min.js"></script>
+  <script src="js/cordova-app.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

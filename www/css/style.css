@@ -1,0 +1,476 @@
+
+/* Credit Card */
+
+.credit-card {
+  width            : 100%;
+  height           : 400px;
+  margin           :0 auto 0;
+  border-radius    : 6px;
+  background-color : #fff;
+}
+
+
+.selectNumber,
+.card-number,
+.month input,
+.cvv input {
+  font-size   : 14px;
+  font-weight : 100;
+  line-height : 14px;
+}
+
+.selectNumber,
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month input,
+.cvv input {
+  color   : #86939e;
+  opacity : .7;
+}
+
+/* Card Number */
+
+.card-number {
+  width : 100% !important;
+  height : 42px !important;
+  margin-bottom : 10px !important;
+  padding-left  : 20px !important;
+  border        : 2px solid #e1e8ee !important;
+  border-radius : 6px !important;
+}
+
+.selectNumber {
+  width : 100% !important;
+  height : 42px !important;
+  margin-bottom : 20px !important;
+  padding-left  : 20px !important;
+  border        : 2px solid #e1e8ee !important;
+  border-radius : 6px !important;
+}
+
+/* Date Field */
+.month input,
+.cvv input {
+  -moz-appearance     : none;
+  -webkit-appearance  : none;
+  margin-bottom       : 10px;
+  border-radius       : 6px;
+  background-position : 85% 50%;
+  width         : 145px;
+  float         : left;
+  padding-left  : 20px;
+  border        : 2px solid #e1e8ee;
+  border-radius : 6px;
+  background    : #fff;
+  margin-right: 5px;
+  height : 42px
+}
+
+.month input {
+  float : left;
+}
+
+.cvv input {
+  float : right;
+}
+
+/* Card Verification Field */
+.selectNumber,
+.card-number{
+  width         : 145px;
+  float         : left;
+  padding-left  : 20px;
+  border        : 2px solid #e1e8ee;
+  border-radius : 6px;
+  background    : #fff;
+}
+
+
+/* Buttons Section */
+
+.close-btn,
+.save-btn {
+  width : 100%;
+  height : 42px;
+  border-color  : transparent;
+  border-radius : 6px;
+  font-size     : 16px;
+
+}
+
+.save-btn {
+  margin-bottom : 10px;
+  background    : #7dc855;
+  color : #fff;
+  text-align: center;
+  padding: 10px 40%;
+}
+
+
+.close-btn  {
+  background-color : rgba(255, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+}
+
+.selectNumber,
+.card-number,
+input[type=text]:focus {
+  border: 3px solid rgba(0, 111, 173, 0.2);
+}
+
+#credit_cards{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.transparent {
+  opacity: 0.2;
+}
+
+.isDisabled {
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/*********************************
+**********************************
+CUSTOM CSS APP EDITADO
+**********************************
+**********************************/
+
+/* ICONS TABS MANU COLOR*/
+.tabbar a.tab-link {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: none; /*var(--f7-tabbar-link-text-transform)*/
+  font-weight: var(--f7-tabbar-link-font-weight);
+  letter-spacing: var(--f7-tabbar-link-letter-spacing);
+  overflow: hidden;
+}
+
+.tabbar .tab-link-active, .tabbar-labels .tab-link-active {
+  color: #ff8000;
+  background-color: var(--f7-tabbar-link-active-bg-color,transparent);
+}
+
+.color-tive {
+  color: #ff8000 !important;
+  /*border: 1px solid #ff8000 !important;*/
+}
+
+
+.activess {
+  color: #ff8000 !important;
+  border: 1px solid #ff8000 !important;
+}
+
+/* Botones de la paginacion del Slide */
+.swiper-pagination-bullet{
+  color: white !important;
+  background-color: transparent;
+  /*border-color: #00b8e5;*/
+  border: black 1px solid;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #00b8e5;
+  border: #0087a9 1.5px solid;
+}
+
+/* CAJAS DE SERVICIOS */
+
+.carde {
+  background: var(--f7-card-bg-color);
+  position: relative;
+  border-radius: var(--f7-card-border-radius);
+  font-size: var(--f7-card-font-size);
+  margin-top: var(--f7-card-margin-vertical);
+  margin-bottom: var(--f7-card-margin-vertical);
+  margin-left: calc(var(--f7-card-margin-horizontal) + var(--f7-safe-area-left));
+  margin-right: calc(var(--f7-card-margin-horizontal) + var(--f7-safe-area-right));
+  /*box-shadow: var(--f7-card-box-shadow);*/
+}
+
+.row:not(.no-gap) .col>.carde {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.relux{
+  height: 0;
+}
+
+/* */
+.stepper-button-minus:after, .stepper-button-plus:after {
+  width: 10px;
+  height: 2px;
+}
+
+.stepper-button-plus:before {
+  height: 10px;
+  width: 2px;
+}
+
+.toolbar-bottom:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: 100%;
+  height: 8px;
+  top: auto;
+  pointer-events: none;
+  /*background: var(--f7-toolbar-bottom-shadow-image);*/
+  background: transparent;
+}
+
+.md .tabbar .tab-link-highlight, .md .tabbar-labels .tab-link-highlight {
+  position: absolute;
+  height: 2px;
+  /*background: var(--f7-tabbar-link-active-border-color,var(--f7-theme-color));*/
+  background: transparent;
+  transition-duration: .3s;
+  left: 0;
+}
+/*------------------------------*/
+/*------------------------------*/
+/*--------- Map css /-----------*/
+/*------------------------------*/
+/*------------------------------*/
+
+#map_canvas { /* Must bigger size than 100x100 pixels */
+  width: 100%;
+  height: 500px;
+}
+.cmapi {
+  padding: .5em;
+  margin: .5em;
+}
+
+
+/* MAPA CSS */
+#geomap{
+  width: 100%;
+  height: 400px;
+}
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+
+}
+
+.pac-container {
+  z-index: 50000 !important;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+
+  width: 93%;
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 5px;
+}
+
+#pac-input:focus {
+  /*border-color:;*/
+  border:1px solid  #00b8e5;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+/* *//* *//* *//* *//* */
+/* *//* *//* *//* *//* */
+/* BURBUJAS EN LOS BOTONES*/
+/* *//* *//* *//* *//* */
+/* *//* *//* *//* *//* 
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, hsl(210, 80%, 42%) 3px, hsl(210, 80%, 42%) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, hsl(210, 80%, 42%) 3px, hsl(210, 80%, 42%) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsl(210, 80%, 42%) 5px, hsl(210, 80%, 42%) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+*/
+/*.tab-link-active::before {*/
+ .tab-link::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+  radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, hsl(210, 80%, 42%) 3px, hsl(210, 80%, 42%) 4px, transparent 4px),
+  radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, hsl(210, 80%, 42%) 3px, hsl(210, 80%, 42%) 4px, transparent 4px),
+  radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsl(210, 80%, 42%) 5px, hsl(210, 80%, 42%) 6px, transparent 6px),
+  radial-gradient(circle at 64% 64%, transparent 0, transparent 4px, hsl(210, 80%, 42%) 7px, hsl(210, 80%, 42%) 6px, transparent 6px),
+  radial-gradient(circle at 20% 68%, transparent 0, transparent 4px, hsl(210, 80%, 42%) 6px, hsl(210, 80%, 42%) 3px, transparent 3px),
+  radial-gradient(circle at 10% 55%,  transparent 0,  transparent 2px, hsl(210, 80%, 42%) 3px, hsl(210, 80%, 42%) 4px, transparent 4px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: activel 5s linear infinite both;
+}
+
+@keyframes activel {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+
+
+/*Test Bound*/
+.scroll-touch {
+  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+
+.scroll-auto {
+  -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+}
+
+#myVideo {
+  /*position: fixed;*/
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%;
+  height: 153px;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+   font-size: 10px
+}
+
+/************************************/
+/************************************/
+/************************************/
+/************************************/
+/************************************/
+/* Remove after del menu IOs */
+/* Configuraciones solo de IOS */
+/* Eliminar en Android*/
+.navbar {
+  background-color: white !important;
+  height: 55px !important;
+}
+
+.navbar:after {
+   content: none !important;
+}
+
+/************************************/
+/************************************/
+/************************************/
+/************************************/
